@@ -1,12 +1,15 @@
 const chalk = require('chalk');
 const figlet = require('figlet');
 
-const greetingMessage = () => {
+const printGreeting = () => {
   const message = chalk.green(
-    figlet.textSync('Hello, world!'),
+    figlet.textSync('File Creator', {
+      horizontalLayout: 'default',
+      verticalLayout: 'default',
+    }),
   );
 
   console.log(message);
 };
 
-module.exports = greetingMessage;
+module.exports = printGreeting;

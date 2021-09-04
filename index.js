@@ -2,11 +2,11 @@
 
 const shell = require('shelljs');
 
-const greetingMessage = require('./greeting');
+const printGreeting = require('./greeting');
 const askQuestions = require('./question');
 
 const run = async () => {
-  greetingMessage();
+  printGreeting();
   const { FILENAME, EXTENSION } = askQuestions();
 };
 
