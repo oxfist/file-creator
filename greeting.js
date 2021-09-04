@@ -2,7 +2,11 @@ const chalk = require('chalk');
 const figlet = require('figlet');
 
 const greetingMessage = () => {
-  console.log(chalk.green('Hello, world'));
-}
+  const message = chalk.green(
+    figlet.textSync('Hello, world!'),
+  );
+
+  console.log(message);
+};
 
 module.exports = greetingMessage;

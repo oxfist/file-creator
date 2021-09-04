@@ -3,8 +3,7 @@
 const inquirer = require('inquirer');
 const shell = require('shelljs');
 
-const greetingMessage = require('./greeting.js');
-
+const greetingMessage = require('./greeting');
 
 const run = async () => {
   greetingMessage();
